@@ -46,6 +46,10 @@ body {
   transition: background-position 0.5s ease, transform 0.2s ease,
     box-shadow 0.3s ease;
   box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  padding: 15px 20px; /* Добавляем отступы */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .button:hover {
@@ -410,6 +414,7 @@ body {
   color: var(--accent);
   transition: all 0.5s;
   cursor: pointer;
+  border: none;
 }
 
 .programs-card__link::after {
@@ -445,11 +450,13 @@ body {
 .slider-container {
   display: flex;
   position: relative;
-  min-width: 800px;
+  max-width: 100%;
   height: 500px;
   overflow: hidden;
   border-radius: 10px;
   margin: 0 auto;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .slider {
@@ -921,9 +928,11 @@ body {
 
 /* Large devices (ноутбуки, маленькие десктопы) */
 
-@media (max-width: 992px) {
+@media (max-width: 640px) {
   .slider-container {
-    min-width: 600px;
+    min-width: 100%;
+    max-width: 100%;
+    height: 300px;
   }
 }
 
@@ -931,7 +940,8 @@ body {
   .coach,
   .programs__container,
   .faq,
-  .contact-container {
+  .contact-container,
+  .gallery {
     margin-top: 60px;
   }
 
@@ -968,7 +978,8 @@ body {
 
 @media (max-width: 640px) {
   .slider-container {
-    min-width: 400px;
+    min-width: 90%;
+    max-width: 100%;
     height: 300px;
   }
 }
@@ -1002,6 +1013,7 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
 
   .accordion {
     margin-left: 10px;
