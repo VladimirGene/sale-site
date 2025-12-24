@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fit Studio - Фитнес студия</title>
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- 1. Сброс -->
+    <link rel="stylesheet" href="./css/font.css" />
+    <!-- 2. Шрифты -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- 3. Основные стили -->
+
+    <!--  фавикон -->
+    <link rel="icon" href="./src/icon/logo.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__inner">
+          <a href="/" class="header__logo logo">
+            <img
+              class="logo__image"
+              src="./src/icon/logo.svg"
+              alt="Fit Studio - логотип фитнес студии"
+              width="80"
+              height="50"
+            />
+          </a>
+          <nav class="header__nav">
+            <ul class="nav__list">
+              <ul class="nav__item">
+                <a href="#home">Главная</a>
+              </ul>
+              <ul class="nav__item">
+                <a href="#coach">Тренеры</a>
+              </ul>
+              <ul class="nav__item">
+                <a href="#programs">Программы</a>
+              </ul>
+              <ul class="nav__item">
+                <a href="#faq">Вопросы и ответы</a>
+              </ul>
+              <ul class="nav__item">
+                <a href="#gallery">Галерея</a>
+              </ul>
+              <ul class="nav__item">
+                <a href="#contacts">Контакты</a>
+              </ul>
+            </ul>
+          </nav>
+          <div class="header__info">
+            <a href="tel:+79282822882" class="header__phone">
+              <img src="./src/icon/phone.svg" alt="Телефон" />
+            </a>
+            <a href="tel:+79282822882" class="header__phone">
+              <img src="./src/icon/max.svg" alt="Телефон" />
+            </a>
+            <a href="tel:+79282822882" class="header__phone">
+              <img src="./src/icon/telegram.svg" alt="Телефон" />
+            </a>
+          </div>
+          <button class="header__nav-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN: Основное содержимое -->
+    <main class="main">
+      <section class="hero" id="home">
+        <div class="hero__container container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Подтянутое тело
+              <span class="hero__title-accent">за месяц</span>
+              тренировок
+            </h1>
+            <p class="hero__subtitle">
+              Программа тренировки включает в себя разнообразные упражнения,
+              направленные на развитие силы и мышечного тонуса.
+            </p>
+            <a type="button" class="hero__button button" href="#programs">
+              Посмотреть программы
+            </a>
+          </div>
+          <div class="hero__media">
+            <div class="hero__image-wrapper">
+              <img
+                class="hero__image"
+                src="./src/image/hero__image.png"
+                alt="Довольная девушка после тренировки в фитнес-студии"
+              />
+            </div>
+            <a href="#coach" class="hero__media-button button">
+              Выбери своего тренера
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="coach" id="coach">
+        <div class="coach__container container">
+          <h2 class="coach__title">Наши тренеры</h2>
+          <div class="coach__list">
+            <article class="coach-card">
+              <a href="#" class="coach-card__image-wrapper">
+                <img
+                  class="coach-card__image"
+                  src="./src/image/coach-terminator.webp"
+                  alt="Картинка с тренером"
+                  width="284"
+                  height="203"
+                />
+              </a>
+              <div class="coach-card__content">
+                <h3 class="coach-card__title">Терминатор</h3>
+                <button href="#" class="coach-card__button button">
+                  Записаться
+                </button>
+              </div>
+            </article>
+            <article class="coach-card">
+              <a href="#" class="coach-card__image-wrapper">
+                <img
+                  class="coach-card__image"
+                  src="./src/image/stalone-coach.webp"
+                  alt="Картинка с тренером"
+                  width="284"
+                  height="203"
+                />
+              </a>
+              <div class="coach-card__content">
+                <h3 class="coach-card__title">Сильвестр Столовой</h3>
+                <button href="#" class="coach-card__button button">
+                  Записаться
+                </button>
+              </div>
+            </article>
+            <article class="coach-card">
+              <a href="#" class="coach-card__image-wrapper">
+                <img
+                  class="coach-card__image"
+                  src="./src/image/Hulk_Hogan.jpg"
+                  alt="Картинка с тренером"
+                  width="284"
+                  height="203"
+                />
+              </a>
+              <div class="coach-card__content">
+                <h3 class="coach-card__title">Халк Хоган</h3>
+                <button href="#" class="coach-card__button button">
+                  Записаться
+                </button>
+              </div>
+            </article>
+            <article class="coach-card">
+              <a href="#" class="coach-card__image-wrapper">
+                <img
+                  class="coach-card__image"
+                  src="./src/image/jan-clod.jpg"
+                  alt="Картинка с тренером"
+                  width="284"
+                  height="203"
+                />
+              </a>
+              <div class="coach-card__content">
+                <h3 class="coach-card__title">Жан Плов Лагман</h3>
+                <button href="#" class="coach-card__button button">
+                  Записаться
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="programs" id="programs">
+        <div class="programs__container container">
+          <h2 class="programs__title">Наши программы</h2>
+          <div class="programs__list">
+            <article class="programs-card">
+              <div class="programs-card__image-wrapper">
+                <img
+                  class="programs-card__image"
+                  src="./src/image/newbie.webp"
+                  alt="Картинка с программой"
+                />
+              </div>
+              <div class="programs-card__content">
+                <h3 class="programs-card__title">
+                  Для новичков <br />(3 дня/неделю)
+                </h3>
+                <a href="#" class="programs-card__link">Подробнее</a>
+              </div>
+            </article>
+            <article class="programs-card">
+              <div class="programs-card__image-wrapper">
+                <img
+                  class="programs-card__image"
+                  src="./src/image/thin.jpg"
+                  alt="Картинка с программой"
+                />
+              </div>
+              <div class="programs-card__content">
+                <h3 class="programs-card__title">
+                  Для похудения <br />(4 дня/неделю)
+                </h3>
+                <a href="#" class="programs-card__link">Подробнее</a>
+              </div>
+            </article>
+            <article class="programs-card">
+              <div class="programs-card__image-wrapper">
+                <img
+                  class="programs-card__image"
+                  src="./src/image/fat.jpg"
+                  alt="Картинка с программой"
+                />
+              </div>
+              <div class="programs-card__content">
+                <h3 class="programs-card__title">
+                  Для набора массы <br />(4 дня/неделю)
+                </h3>
+                <a href="#" class="programs-card__link">Подробнее</a>
+              </div>
+            </article>
+            <article class="programs-card">
+              <div class="programs-card__image-wrapper">
+                <img
+                  class="programs-card__image"
+                  src="./src/image/screen-3.jpg"
+                  alt="Картинка с программой"
+                />
+              </div>
+              <div class="programs-card__content">
+                <h3 class="programs-card__title">
+                  Для поддержания формы <br />(2–3 дня/неделю)
+                </h3>
+                <a href="#" class="programs-card__link">Подробнее</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="gallery" id="gallery">
+        <div class="gallery__container container">
+          <h2 class="gallery__title">Галерея</h2>
+
+          <div class="slider-container">
+            <button class="prev-btn" aria-label="Предыдущий слайд">‹</button>
+            <div class="slider active">
+              <img src="./src/image/gym1.jpg" alt="Фото спортзала" />
+            </div>
+            <div class="slider">
+              <img src="./src/image/gym5.webp" alt="Фото спортзала" />
+            </div>
+            <div class="slider">
+              <img src="./src/image/gym6.webp" alt="Фото спортзала" />
+            </div>
+            <button class="next-btn" aria-label="Следующий слайд">›</button>
+          </div>
+        </div>
+      </section>
+      <section class="faq" id="faq">
+        <div class="faq__container container">
+          <h2 class="faq__title">Вопросы и ответы</h2>
+          <div class="faq__media">
+            <div class="faq__image-wrapper">
+              <img
+                class="faq__image"
+                src="./src/image/faq.png"
+                alt="девушка с гантелями"
+              />
+            </div>
+            <div class="accordion">
+              <div class="accordion__item">
+                <div class="accordion-item__header">
+                  <span>Какие способы оплаты вы принимаете?</span>
+                </div>
+                <div class="accordion-item__body">
+                  <p>
+                    Наш сайт подключен к интернет-эквайрингу, и вы можете
+                    оплатить товар или услугу банковской картой Visa,
+                    MasterCard, Maestro и МИР. Также в наших клубах возможна
+                    наличная оплата при посещении фитнес-центра.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion-item__header">
+                  <span>Какие способы оплаты вы принимаете?</span>
+                </div>
+                <div class="accordion-item__body">
+                  <p>
+                    Наш сайт подключен к интернет-эквайрингу, и вы можете
+                    оплатить товар или услугу банковской картой Visa,
+                    MasterCard, Maestro и МИР. Также в наших клубах возможна
+                    наличная оплата при посещении фитнес-центра.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion-item__header">
+                  <span>Какие способы оплаты вы принимаете?</span>
+                </div>
+                <div class="accordion-item__body">
+                  <p>
+                    Наш сайт подключен к интернет-эквайрингу, и вы можете
+                    оплатить товар или услугу банковской картой Visa,
+                    MasterCard, Maestro и МИР. Также в наших клубах возможна
+                    наличная оплата при посещении фитнес-центра.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion-item__header">
+                  <span>Какие способы оплаты вы принимаете?</span>
+                </div>
+                <div class="accordion-item__body">
+                  <p>
+                    Наш сайт подключен к интернет-эквайрингу, и вы можете
+                    оплатить товар или услугу банковской картой Visa,
+                    MasterCard, Maestro и МИР. Также в наших клубах возможна
+                    наличная оплата при посещении фитнес-центра.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contacts">
+        <div class="contact-container container">
+          <h2 class="contact__title">Контакты</h2>
+          <div class="contact__inner">
+            <div class="feedback__content">
+              <form class="feedback__form" id="contact-form">
+                <h2 class="feedback__title">
+                  Мы свяжемся с вами в ближайшее время
+                </h2>
+                <div class="form__group">
+                  <label for="name" class="form__label">Ваше имя</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form__input"
+                    required
+                    placeholder="Имя"
+                  />
+                </div>
+                <div class="form__group">
+                  <label for="phone" class="form__label">Ваш телефон</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="form__input"
+                    required
+                    placeholder="Телефон"
+                  />
+                </div>
+
+                <div class="form__group">
+                  <label for="email" class="form__label">Ваш Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form__input"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="form__group">
+                  <label class="form__checkbox">
+                    <input type="checkbox" name="agreement" required />
+                    <span>Согласен на обработку персональных данных</span>
+                  </label>
+                </div>
+
+                <button type="submit" class="form__button button">
+                  Отправить
+                </button>
+              </form>
+            </div>
+            <div class="contact-map">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A1fd22a5b2e975648ef6cca165a6d4aef3dcba63042256081c78e047fce9ecb59&amp;source=constructor"
+                width="500"
+                height="500"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__logo">
+            <img
+              class="logo"
+              src="./src/icon/logo.svg"
+              alt="Логотип компании"
+              width="80"
+              height="50"
+            />
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="#">Клубы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#">Тренировки</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#">Абонементы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#">Программа лояльности</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__policy">
+            <div class="policy__inner">
+              <span>&copy;</span>
+              <p class="policy__title">Copyright. Все права защищены</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/slider.js"></script>
+  </body>
+</html>
