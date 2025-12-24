@@ -20,7 +20,7 @@
     <header class="header">
       <div class="container header__container">
         <div class="header__inner">
-          <a href="#home" class="header__logo logo">
+          <a href="/" class="header__logo logo">
             <img
               class="logo__image"
               src="./src/icon/logo.svg"
@@ -119,9 +119,7 @@
               </a>
               <div class="coach-card__content">
                 <h3 class="coach-card__title">Терминатор</h3>
-                <button href="#" class="coach-card__button button">
-                  Записаться
-                </button>
+                <button class="coach-card__button button">Записаться</button>
               </div>
             </article>
             <article class="coach-card">
@@ -136,9 +134,7 @@
               </a>
               <div class="coach-card__content">
                 <h3 class="coach-card__title">Сильвестр Столовой</h3>
-                <button href="#" class="coach-card__button button">
-                  Записаться
-                </button>
+                <button class="coach-card__button button">Записаться</button>
               </div>
             </article>
             <article class="coach-card">
@@ -153,9 +149,7 @@
               </a>
               <div class="coach-card__content">
                 <h3 class="coach-card__title">Халк Хоган</h3>
-                <button href="#" class="coach-card__button button">
-                  Записаться
-                </button>
+                <button class="coach-card__button button">Записаться</button>
               </div>
             </article>
             <article class="coach-card">
@@ -170,9 +164,7 @@
               </a>
               <div class="coach-card__content">
                 <h3 class="coach-card__title">Жан Плов Лагман</h3>
-                <button href="#" class="coach-card__button button">
-                  Записаться
-                </button>
+                <button class="coach-card__button button">Записаться</button>
               </div>
             </article>
           </div>
@@ -194,7 +186,7 @@
                 <h3 class="programs-card__title">
                   Для новичков <br />(3 дня/неделю)
                 </h3>
-                <a href="#" class="programs-card__link">Подробнее</a>
+                <a class="programs-card__link">Подробнее</a>
               </div>
             </article>
             <article class="programs-card">
@@ -209,7 +201,7 @@
                 <h3 class="programs-card__title">
                   Для похудения <br />(4 дня/неделю)
                 </h3>
-                <a href="#" class="programs-card__link">Подробнее</a>
+                <a class="programs-card__link">Подробнее</a>
               </div>
             </article>
             <article class="programs-card">
@@ -224,7 +216,7 @@
                 <h3 class="programs-card__title">
                   Для набора массы <br />(4 дня/неделю)
                 </h3>
-                <a href="#" class="programs-card__link">Подробнее</a>
+                <a class="programs-card__link">Подробнее</a>
               </div>
             </article>
             <article class="programs-card">
@@ -239,7 +231,7 @@
                 <h3 class="programs-card__title">
                   Для поддержания формы <br />(2–3 дня/неделю)
                 </h3>
-                <a href="#" class="programs-card__link">Подробнее</a>
+                <a class="programs-card__link">Подробнее</a>
               </div>
             </article>
           </div>
@@ -397,6 +389,57 @@
           </div>
         </div>
       </section>
+      <div class="popup">
+        <div class="popup__content">
+          <form class="feedback__form" id="contact-form">
+            <h2 class="feedback__title">
+              Мы свяжемся с вами в ближайшее время
+            </h2>
+            <button class="popup__btn">&#10006;</button>
+            <div class="form__group">
+              <label for="name" class="form__label">Ваше имя</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form__input"
+                required
+                placeholder="Имя"
+              />
+            </div>
+            <div class="form__group">
+              <label for="phone" class="form__label">Ваш телефон</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="form__input"
+                required
+                placeholder="Телефон"
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="email" class="form__label">Ваш Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form__input"
+                placeholder="Email"
+              />
+            </div>
+            <div class="form__group">
+              <label class="form__checkbox">
+                <input type="checkbox" name="agreement" required />
+                <span>Согласен на обработку персональных данных</span>
+              </label>
+            </div>
+
+            <button type="submit" class="form__button button">Отправить</button>
+          </form>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="container">
@@ -442,4 +485,3 @@
     <script src="./js/slider.js"></script>
   </body>
 </html>
-
